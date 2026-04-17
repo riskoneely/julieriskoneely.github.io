@@ -31,27 +31,22 @@
   .project-item {
     display: flex;
     align-items: center;
-    gap: 0;
     padding: 80px 0;
     text-decoration: none;
     color: var(--text);
     transition: opacity 0.3s;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .project-item:hover { opacity: 0.75; }
   .project-item:hover .project-img { transform: scale(1.02); }
 
-  /* Alternating: odd = text left image right, even = image left text right */
-  .project-item:nth-child(odd) { flex-direction: row; }
-  .project-item:nth-child(even) { flex-direction: row-reverse; }
+  /* Alternating: odd = image right text left, even = image left text right */
+  .project-item:nth-child(odd) { flex-direction: row-reverse; }
+  .project-item:nth-child(even) { flex-direction: row; }
 
   .project-text { flex: 0 0 220px; }
-
-  /* Odd: text on left, pad right side toward image */
-  .project-item:nth-child(odd) .project-text { padding-right: 32px; }
-
-  /* Even: text on right, pad left side toward image */
-  .project-item:nth-child(even) .project-text { padding-left: 32px; }
+  .project-item:nth-child(odd) .project-text { padding-left: 40px; }
+  .project-item:nth-child(even) .project-text { padding-right: 40px; }
 
   .project-text { flex: 0 0 220px; }
   .project-subtitle { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; line-height: 1.6; }
@@ -211,3 +206,4 @@
 
 </body>
 </html>
+
