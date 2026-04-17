@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julie Risko Neely</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --white: #ffffff; --off-white: #f9f8f6; --text: #1a1a1a; --muted: #888; --border: #e0e0e0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Jost', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 28px 48px; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+  .nav-name { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 18px; letter-spacing: 0.06em; text-decoration: none; color: var(--text); }
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--text); }
+
+  .hero { padding: 160px 48px 80px; max-width: 900px; }
+  .hero-name { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(48px, 7vw, 88px); line-height: 1; letter-spacing: 0.04em; margin-bottom: 28px; }
+  .hero-descriptor { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); line-height: 1.8; }
+
+  .projects { padding: 40px 48px 120px; }
+  .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3px; }
+
+  .project-item { position: relative; overflow: hidden; cursor: pointer; background: var(--off-white); text-decoration: none; display: block; }
+  .project-item:nth-child(1) { grid-column: span 2; }
+  .project-item:nth-child(6) { grid-column: span 2; }
+  .project-item:nth-child(9) { grid-column: span 2; }
+
+  .project-img-wrap { overflow: hidden; }
+  .project-item:nth-child(1) .project-img-wrap { height: 600px; }
+  .project-item:nth-child(6) .project-img-wrap { height: 500px; }
+  .project-item:nth-child(9) .project-img-wrap { height: 500px; }
+  .project-item:not(:nth-child(1)):not(:nth-child(6)):not(:nth-child(9)) .project-img-wrap { height: 440px; }
+
+  .project-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  .project-item:hover .project-img { transform: scale(1.04); }
+
+  .project-info { padding: 20px 24px 26px; background: var(--white); border-top: 1px solid var(--border); }
+  .project-subtitle { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .project-title { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 22px; line-height: 1.2; color: var(--text); }
+  .project-role { font-size: 11px; color: var(--muted); margin-top: 6px; letter-spacing: 0.04em; }
+
+  footer { border-top: 1px solid var(--border); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-name { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 14px; letter-spacing: 0.06em; color: var(--muted); }
+  .footer-links { display: flex; gap: 32px; }
+  .footer-links a { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color 0.2s; }
+  .footer-links a:hover { color: var(--text); }
+
+  @media (max-width: 768px) {
+    nav { padding: 20px 24px; }
+    .hero { padding: 120px 24px 60px; }
+    .projects { padding: 20px 12px 80px; }
+    .project-grid { grid-template-columns: 1fr; }
+    .project-item:nth-child(1), .project-item:nth-child(6), .project-item:nth-child(9) { grid-column: span 1; }
+    footer { padding: 32px 24px; flex-direction: column; gap: 20px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-name">Julie Risko Neely</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="mailto:riskoneely@gmail.com">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1 class="hero-name">Julie Risko<br>Neely</h1>
+  <p class="hero-descriptor">Senior Designer &nbsp;&middot;&nbsp; RISD &nbsp;&middot;&nbsp; Healthcare Brand &amp; Campaign &nbsp;&middot;&nbsp; Chicago</p>
+</section>
+
+<section class="projects">
+  <div class="project-grid">
+
+    <a href="wellbeing.html" class="project-item">
+      <div class="project-img-wrap">
+        <img src="images/Wellbeing_hero.jpg" alt="Employee Well-being Rebrand" class="project-img">
+      </div>
+      <div class="project-info">
+        <p class="project-subtitle">What does well-being look like as a brand?</p>
+        <h2 class="project-title">Reimagining Employee Well-being</h2>
+        <p class="project-role">Design Lead &mdash; Brand, Concept Development &mdash; American Medical Association</p>
+      </div>
+    </a>
+
+    <a href="women.html" class="project-item">
+      <div class="project-img-wrap">
+        <img src="images/Women_in_med_hero.jpg" alt="Women in Medicine Campaign" class="project-img">
+      </div>
+      <div class="project-info">
+        <p class="project-subtitle">Putting faces to a movement</p>
+        <h2 class="project-title">Women in Medicine Social Campaign</h2>
+        <p class="project-role">Design Lead &mdash; Brand, Digital Campaign &mdash; American Medical Association</p>
+      </div>
+    </a>
+
+    <a href="advocacy.html" class="project-item">
+      <div class="project-img-wrap">
+        <img src="images/State_advocacy_hero.jpg" alt="State Advocacy Summit" class="project-img">
+      </div>
+      <div class="project-info">
+        <p class="project-subtitle">Where advocacy meets identity</p>
+        <h2 class="project-title">Rebranding AMA State Advocacy Summit</h2>
+        <p class="project-role">Design Lead &mdash; Brand, Event Design &mdash; American Medical Association</p>
+      </div>
+    </a>
+
+    <a href="acph.html" class="project-item">
+      <div class="project-img-wrap">
+        <img src="images/ACPH_2023_hero.jpg" alt="ACPH 2023" class="project-img">
+      </div>
+      <div class="project-info">
+        <p class="project-subtitle">Building a conference brand from the ground up</p>
+        <h2 class="project-title">American Conference on Physician Health</h2>
+        <p class="project-role">Design Lead &mdash; Brand, Event, Campaign, Print, Digital &mdash; AMA / Mayo Clinic / Stanford Medicine</p>
+      </div>
+    </a>
+
+    <a href="icph.html" class="project-item">
+      <div class="project-img-wrap">
+        <img src="images/ICPH_2022_hero.jpg" alt="ICPH 2022" class="project-img">
+      </div>
+      <div class="project-info">
+        <p class="project-subtitle">A global conversation, unified by design</p>
+        <h2 class="project-title">International Conference on Physician Health</h2>
+        <p class="project-role">Design Lead &mdash; Brand, Event, Campaign, Print, Digital &mdash; AMA / BMA / Canadian Medical Association</p>
+      </div>
+    </a>
+
+    <a href="joy.html" class="project-item">
+      <div class="project-img-wrap">
+        <img src="images/OOH_campaign_hero.jpg" alt="Joy in Medicine Campaign" class="project-img">
+      </div>
+      <div class="project-info">
+        <p class="project-subtitle">When recognition becomes a campaign</p>
+        <h2 class="project-title">Joy in Medicine &mdash; Integrated Campaign</h2>
+        <p class="project-role">Design Lead &mdash; Brand, Campaign, Event, Print, Digital &mdash; American Medical Association</p>
+      </div>
+    </a>
+
+    <a href="parexel.html" class="project-item">
+      <div class="project-img-wrap">
+        <img src="images/PAREXEL_hero.jpg" alt="PAREXEL Clinical Trial Guide" class="project-img">
+      </div>
+      <div class="project-info">
+        <p class="project-subtitle">Making clinical complexity navigable</p>
+        <h2 class="project-title">Guide to Clinical Trials &mdash; Asia Pacific</h2>
+        <p class="project-role">Senior Designer &mdash; Publication Layout &amp; Production &mdash; PAREXEL</p>
+      </div>
+    </a>
+
+    <a href="publications.html" class="project-item">
+      <div class="project-img-wrap">
+        <img src="images/Documents_hero.jpg" alt="AMA Publications" class="project-img">
+      </div>
+      <div class="project-info">
+        <p class="project-subtitle">Design in service of public health</p>
+        <h2 class="project-title">AMA Publications &amp; Educational Content</h2>
+        <p class="project-role">Design Lead &mdash; Brand, Print, Digital &mdash; American Medical Association</p>
+      </div>
+    </a>
+
+    <a href="booksbreakfast.html" class="project-item">
+      <div class="project-img-wrap">
+        <img src="images/Books_breakfast_hero.jpg" alt="Books and Breakfast" class="project-img">
+      </div>
+      <div class="project-info">
+        <p class="project-subtitle">Twelve years. One community. One brand.</p>
+        <h2 class="project-title">Books &amp; Breakfast</h2>
+        <p class="project-role">Pro Bono Design Partner &mdash; Brand Identity &amp; Communications, 2013&ndash;2025</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <span class="footer-name">Julie Risko Neely</span>
+  <div class="footer-links">
+    <a href="mailto:riskoneely@gmail.com">Email</a>
+    <a href="https://linkedin.com/in/julieriskoneely" target="_blank">LinkedIn</a>
+    <a href="https://behance.net/julieriskoneely" target="_blank">Behance</a>
+  </div>
+</footer>
+
+</body>
+</html>

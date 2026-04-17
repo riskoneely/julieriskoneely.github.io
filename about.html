@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Julie Risko Neely</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --white: #ffffff; --text: #1a1a1a; --muted: #888; --border: #e0e0e0; }
+  body { font-family: 'Jost', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 28px 48px; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+  .nav-name { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 18px; letter-spacing: 0.06em; text-decoration: none; color: var(--text); }
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--text); }
+  .about { padding: 140px 48px 100px; max-width: 760px; }
+  .about h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 56px; margin-bottom: 52px; letter-spacing: 0.03em; }
+  .about p { font-size: 16px; line-height: 1.85; color: #333; margin-bottom: 22px; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+  .label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
+  .contact-email { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 4px; transition: border-color 0.2s; display: inline-block; }
+  .contact-email:hover { border-color: var(--text); }
+  .expertise-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 48px; margin-top: 8px; }
+  .expertise-item { font-size: 13px; color: #555; padding: 8px 0; border-bottom: 1px solid var(--border); }
+  footer { border-top: 1px solid var(--border); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-name { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 14px; letter-spacing: 0.06em; color: var(--muted); }
+  .footer-links { display: flex; gap: 32px; }
+  .footer-links a { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color 0.2s; }
+  .footer-links a:hover { color: var(--text); }
+  @media (max-width: 768px) {
+    nav { padding: 20px 24px; }
+    .about { padding: 120px 24px 80px; }
+    .expertise-grid { grid-template-columns: 1fr; }
+    footer { padding: 32px 24px; flex-direction: column; gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-name">Julie Risko Neely</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="mailto:riskoneely@gmail.com">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="about">
+  <h1>About</h1>
+
+  <p>Twenty years in and I still just want to make good work with good people.</p>
+
+  <p>I'm a Senior Designer and Art Director — RISD-trained, healthcare-specialized, and genuinely energized by complex, purposeful work. I ask a lot of questions, get comfortable in ambiguity fast, and check my ego at the door. Collaboration across teams, personalities, and generations is where I thrive.</p>
+
+  <p>For nearly six years I was part of the American Medical Association, the nation's largest physician organization, where my work touched everything from national campaigns to internal culture-building — always end-to-end, always with full ownership. Before that, years of consultant work with healthcare and enterprise organizations, owning projects from brief to final delivery.</p>
+
+  <p>I'm based in Evanston, Illinois.</p>
+
+  <hr class="divider">
+
+  <p class="label">Expertise</p>
+  <div class="expertise-grid">
+    <span class="expertise-item">Brand Strategy</span>
+    <span class="expertise-item">Art Direction</span>
+    <span class="expertise-item">Integrated Campaigns</span>
+    <span class="expertise-item">Typography</span>
+    <span class="expertise-item">Visual &amp; Design Systems</span>
+    <span class="expertise-item">Multi-channel Marketing</span>
+    <span class="expertise-item">Concept Development</span>
+    <span class="expertise-item">Event Identity Systems</span>
+    <span class="expertise-item">Creative Leadership</span>
+    <span class="expertise-item">Publication Design</span>
+    <span class="expertise-item">Stakeholder Collaboration</span>
+    <span class="expertise-item">Data Visualization</span>
+  </div>
+
+  <hr class="divider">
+
+  <p class="label">Education</p>
+  <p>Rhode Island School of Design &mdash; BFA in Graphic Design<br>
+  Brown University &mdash; Liberal Arts coursework via RISD/Brown cross-registration</p>
+
+  <hr class="divider">
+
+  <p class="label">Get in touch</p>
+  <a href="mailto:riskoneely@gmail.com" class="contact-email">riskoneely@gmail.com</a>
+
+</section>
+
+<footer>
+  <span class="footer-name">Julie Risko Neely</span>
+  <div class="footer-links">
+    <a href="mailto:riskoneely@gmail.com">Email</a>
+    <a href="https://linkedin.com/in/julieriskoneely" target="_blank">LinkedIn</a>
+    <a href="https://behance.net/julieriskoneely" target="_blank">Behance</a>
+  </div>
+</footer>
+
+</body>
+</html>
