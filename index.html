@@ -62,14 +62,16 @@
   .project-img { width: 100%; display: block; transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
   /* Individual project text spacing */
-  #p-wellbeing .project-text { padding-left: 16px; }
-  #p-women .project-text { padding-right: 16px; }
+  /* Odd items: row-reverse = text LEFT, image RIGHT — pad-right closes gap */
+  /* Even items: row = text RIGHT, image LEFT — pad-left closes gap */
+  #p-wellbeing .project-text { padding-right: 16px; }
+  #p-women .project-text { padding-left: 16px; }
   #p-advocacy .project-text { padding-right: 40px; }
-  #p-acph .project-text { padding-left: 40px; }
-  #p-icph .project-text { padding-right: 16px; }
-  #p-joy .project-text { padding-left: 40px; }
-  #p-publications .project-text { padding-left: 16px; }
-  #p-books .project-text { padding-right: 16px; }
+  #p-acph .project-text { padding-right: 40px; }
+  #p-icph .project-text { padding-left: 16px; }
+  #p-joy .project-text { padding-right: 40px; }
+  #p-publications .project-text { padding-right: 16px; }
+  #p-books .project-text { padding-left: 16px; }
 
   /* FOOTER */
   footer { padding: 48px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); }
@@ -210,7 +212,7 @@
 
   <a href="booksbreakfast.html" class="project-item" id="p-books">
     <div class="project-text">
-      <p class="project-title">A community nonprofit. A brand built from scratch. A twelve-year creative partnership.</p>
+      <p class="project-title">Design for a cause. A brand built to last.</p>
       <p class="project-role">Pro Bono Design Partner &mdash; Brand Identity &amp; Communications</p>
     </div>
     <div class="project-img-wrap">
