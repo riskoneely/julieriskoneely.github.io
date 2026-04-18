@@ -39,7 +39,10 @@
   .project-item:nth-child(odd) { flex-direction: row-reverse; }
   .project-item:nth-child(even) { flex-direction: row; }
 
-  .project-text { flex: 0 0 280px; }
+  .project-text { flex: 0 0 320px; }
+
+  .project-item:nth-child(odd) .project-text { padding-right: 48px; }
+  .project-item:nth-child(even) .project-text { padding-left: 48px; }
 
   .project-title {
     font-family: 'Inter', sans-serif;
@@ -62,11 +65,8 @@
   .project-img-wrap.large { flex: 0 0 76%; }
   .project-img { width: 100%; display: block; transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
-  /* Individual project text spacing — margin pushes text toward image */
-  /* Odd: row-reverse, text on LEFT → margin-right toward image */
-  /* Even: row, text on RIGHT → margin-left toward image */
-  #p-wellbeing .project-text { margin-right: 48px; }
-  #p-women .project-text { margin-left: 16px; }
+  #p-wellbeing .project-text { padding-right: 56px; }
+  #p-advocacy .project-text { padding-right: 56px; }
   #p-advocacy .project-text { margin-right: 48px; }
   #p-acph .project-text { margin-right: 40px; }
   #p-icph .project-text { margin-left: 16px; }
