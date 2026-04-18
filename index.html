@@ -61,12 +61,15 @@
   .project-img-wrap.large { flex: 0 0 76%; }
   .project-img { width: 100%; display: block; transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
-  /* Individual project text spacing — consistent 40px from image edge */
-  #p-wellbeing .project-text { padding-left: 40px; }
+  /* Individual project text spacing */
+  #p-wellbeing .project-text { padding-left: 16px; }
+  #p-women .project-text { padding-right: 16px; }
   #p-advocacy .project-text { padding-right: 40px; }
   #p-acph .project-text { padding-left: 40px; }
-  #p-icph .project-text { padding-right: 40px; }
+  #p-icph .project-text { padding-right: 16px; }
   #p-joy .project-text { padding-left: 40px; }
+  #p-publications .project-text { padding-left: 16px; }
+  #p-books .project-text { padding-right: 16px; }
 
   /* FOOTER */
   footer { padding: 48px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); }
@@ -135,7 +138,7 @@
     </div>
   </a>
 
-  <a href="women.html" class="project-item">
+  <a href="women.html" class="project-item" id="p-women">
     <div class="project-text">
       <p class="project-title">Putting faces to a movement</p>
       <p class="project-role">Design Lead &mdash; Brand, Digital Campaign</p>
@@ -187,7 +190,7 @@
 
   <a href="parexel.html" class="project-item">
     <div class="project-text">
-      <p class="project-title">Placeholder &mdash; coming soon</p>
+      <p class="project-title">Eighty pages. Thirteen countries. One coherent story.</p>
       <p class="project-role">Senior Designer &mdash; Publication Layout &amp; Production</p>
     </div>
     <div class="project-img-wrap large">
@@ -195,7 +198,7 @@
     </div>
   </a>
 
-  <a href="publications.html" class="project-item">
+  <a href="publications.html" class="project-item" id="p-publications">
     <div class="project-text">
       <p class="project-title">Designing for physicians, patients and policy</p>
       <p class="project-role">Design Lead &mdash; Brand, Print, Digital</p>
@@ -205,9 +208,9 @@
     </div>
   </a>
 
-  <a href="booksbreakfast.html" class="project-item">
+  <a href="booksbreakfast.html" class="project-item" id="p-books">
     <div class="project-text">
-      <p class="project-title">Twelve years. One community. One brand.</p>
+      <p class="project-title">A community nonprofit. A brand built from scratch. A twelve-year creative partnership.</p>
       <p class="project-role">Pro Bono Design Partner &mdash; Brand Identity &amp; Communications</p>
     </div>
     <div class="project-img-wrap">
