@@ -30,7 +30,8 @@
     text-decoration: none;
     color: var(--text);
     transition: opacity 0.3s;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 0;
   }
   .project-item:hover { opacity: 0.75; }
   .project-item:hover .project-img { transform: scale(1.02); }
@@ -61,17 +62,17 @@
   .project-img-wrap.large { flex: 0 0 76%; }
   .project-img { width: 100%; display: block; transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
-  /* Individual project text spacing */
-  /* Odd items: row-reverse = text LEFT, image RIGHT — pad-right closes gap */
-  /* Even items: row = text RIGHT, image LEFT — pad-left closes gap */
-  #p-wellbeing .project-text { padding-right: 16px; }
-  #p-women .project-text { padding-left: 16px; }
-  #p-advocacy .project-text { padding-right: 40px; }
-  #p-acph .project-text { padding-right: 40px; }
-  #p-icph .project-text { padding-left: 16px; }
-  #p-joy .project-text { padding-right: 40px; }
-  #p-publications .project-text { padding-right: 16px; }
-  #p-books .project-text { padding-left: 16px; }
+  /* Individual project text spacing — margin pushes text toward image */
+  /* Odd: row-reverse, text on LEFT → margin-right toward image */
+  /* Even: row, text on RIGHT → margin-left toward image */
+  #p-wellbeing .project-text { margin-right: 16px; }
+  #p-women .project-text { margin-left: 16px; }
+  #p-advocacy .project-text { margin-right: 40px; }
+  #p-acph .project-text { margin-right: 40px; }
+  #p-icph .project-text { margin-left: 16px; }
+  #p-joy .project-text { margin-right: 40px; }
+  #p-publications .project-text { margin-right: 16px; }
+  #p-books .project-text { margin-left: 16px; }
 
   /* FOOTER */
   footer { padding: 48px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); }
@@ -213,7 +214,7 @@
   <a href="booksbreakfast.html" class="project-item" id="p-books">
     <div class="project-text">
       <p class="project-title">Design for a cause. A brand built to last.</p>
-      <p class="project-role">Pro Bono Design Partner &mdash; Brand Identity &amp; Communications</p>
+      <p class="project-role">Brand Identity, Print, Events &amp; Communications</p>
     </div>
     <div class="project-img-wrap">
       <img src="images/Books_breakfast_hero.jpg" alt="Books and Breakfast" class="project-img">
