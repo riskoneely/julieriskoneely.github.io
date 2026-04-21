@@ -5,44 +5,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reimagining Employee Well-being — Julie Risko Neely</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&family=Source+Serif+4:wght@300;400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-  :root { --white: #ffffff; --text: #1a1a1a; --muted: #888; --border: #e0e0e0; }
-  body { font-family: 'Jost', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 28px 48px; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
-  .nav-name { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 18px; letter-spacing: 0.06em; text-decoration: none; color: var(--text); }
+  :root { --white: #ffffff; --text: #121212; --muted: #555555; --light: #999; --border: #e8e8e8; }
+  body { font-family: 'Inter', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 24px 60px; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.97); }
+  .nav-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; letter-spacing: 0.05em; text-decoration: none; color: var(--text); }
   .nav-links { display: flex; gap: 40px; list-style: none; }
-  .nav-links a { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color 0.2s; }
+  .nav-links a { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--light); transition: color 0.2s; }
   .nav-links a:hover { color: var(--text); }
-  .project-hero { padding: 120px 48px 48px; max-width: 800px; }
-  .back-link { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--muted); display: inline-flex; align-items: center; gap: 8px; margin-bottom: 48px; transition: color 0.2s; }
+
+  .project-header { padding: 120px 60px 48px; max-width: 760px; }
+  .back-link { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--light); display: inline-block; margin-bottom: 40px; transition: color 0.2s; }
   .back-link:hover { color: var(--text); }
-  .project-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
-  .project-title { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(36px, 5vw, 60px); line-height: 1.1; margin-bottom: 24px; }
-  .project-meta { display: flex; gap: 48px; margin-bottom: 32px; flex-wrap: wrap; }
-  .meta-item { }
-  .meta-label { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
-  .meta-value { font-size: 13px; color: var(--text); }
-  .project-description { font-size: 15px; line-height: 1.8; color: #444; max-width: 640px; border-top: 1px solid var(--border); padding-top: 32px; }
-  .project-images { padding: 0 48px 80px; }
-  .project-images img { width: 100%; display: block; margin-bottom: 3px; }
-  .project-images img.half { width: calc(50% - 1.5px); display: inline-block; vertical-align: top; }
-  .img-row { display: flex; gap: 3px; margin-bottom: 3px; }
-  .img-row img { flex: 1; object-fit: cover; }
-  .project-nav { padding: 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
-  .project-nav a { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color 0.2s; }
+
+  .project-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.15;
+    color: #121212;
+    margin-bottom: 16px;
+  }
+  .project-role {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #555555;
+    margin-bottom: 32px;
+  }
+  .project-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    max-width: 640px;
+    border-top: 1px solid var(--border);
+    padding-top: 32px;
+  }
+
+  .project-images { padding: 48px 60px 100px; }
+  .project-images img { width: 100%; display: block; margin-bottom: 24px; }
+
+  .project-nav { padding: 40px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
+  .project-nav a { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--light); transition: color 0.2s; }
   .project-nav a:hover { color: var(--text); }
-  footer { border-top: 1px solid var(--border); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; }
-  .footer-name { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 14px; letter-spacing: 0.06em; color: var(--muted); }
+
+  footer { border-top: 1px solid var(--border); padding: 40px 60px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 13px; letter-spacing: 0.05em; color: var(--light); }
   .footer-links { display: flex; gap: 32px; }
-  .footer-links a { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color 0.2s; }
+  .footer-links a { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: var(--light); transition: color 0.2s; }
   .footer-links a:hover { color: var(--text); }
+
   @media (max-width: 768px) {
     nav { padding: 20px 24px; }
-    .project-hero { padding: 100px 24px 40px; }
-    .project-images { padding: 0 0 60px; }
-    .img-row { flex-direction: column; }
+    .project-header { padding: 100px 24px 40px; }
+    .project-images { padding: 32px 24px 80px; }
+    .project-nav { padding: 32px 24px; }
     footer { padding: 32px 24px; flex-direction: column; gap: 20px; }
   }
 </style>
@@ -58,29 +82,16 @@
   </ul>
 </nav>
 
-<div class="project-hero">
+<div class="project-header">
   <a href="index.html" class="back-link">&larr; All Work</a>
-  <p class="project-label">What does well-being look like as a brand?</p>
   <h1 class="project-title">Reimagining Employee Well-being</h1>
-  <div class="project-meta">
-    <div class="meta-item">
-      <p class="meta-label">Client</p>
-      <p class="meta-value">American Medical Association</p>
-    </div>
-    <div class="meta-item">
-      <p class="meta-label">Role</p>
-      <p class="meta-value">Design Lead — Brand, Concept Development</p>
-    </div>
-    <div class="meta-item">
-      <p class="meta-label">Result</p>
-      <p class="meta-value">+40% employee participation in year one</p>
-    </div>
-  </div>
-  <p class="project-description">End-to-end rebrand of an internal well-being program, transforming it into a cohesive brand experience built around personalized wellness. The new system spanned digital, environmental, and print touchpoints — giving a previously fragmented program a confident, unified identity that employees could see and feel across every channel.</p>
+  <p class="project-role">Design Lead &mdash; Brand, Concept Development &mdash; American Medical Association</p>
+  <p class="project-description">End-to-end rebrand of an internal well-being program, transforming it into a cohesive brand experience built around personalized wellness. The new system increased employee participation by 40% in its first year.</p>
 </div>
 
 <div class="project-images">
-  <img src="images/Wellbeing_hero.jpg" alt="Well-being environmental banners">
+  <img src="images/Wellbeing_Detail.jpg" alt="Well-being rebrand detail">
+  <img src="images/Wellbeing_Detail2.jpg" alt="Well-being rebrand detail 2">
 </div>
 
 <div class="project-nav">
