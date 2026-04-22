@@ -18,19 +18,10 @@
   .nav-links a { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--light); transition: color 0.2s; }
   .nav-links a:hover { color: var(--text); }
 
-  .project-header { padding: 120px 60px 48px; max-width: 900px; }
+  .page-wrap { padding: 120px 60px 0; max-width: 900px; }
+
   .back-link { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--light); display: inline-block; margin-bottom: 40px; transition: color 0.2s; }
   .back-link:hover { color: var(--text); }
-
-  /* Top section: text left, video right */
-  .intro-section {
-    display: flex;
-    align-items: flex-start;
-    gap: 60px;
-    padding: 0 60px 60px;
-    max-width: 1400px;
-  }
-  .intro-text { flex: 0 0 320px; }
 
   .project-title {
     font-family: 'Inter', sans-serif;
@@ -56,48 +47,50 @@
     color: #444;
     border-top: 1px solid var(--border);
     padding-top: 28px;
+    margin-bottom: 40px;
   }
 
-  .video-wrap { flex: 1; }
+  /* Video — smaller, centered below intro text */
+  .video-wrap {
+    max-width: 560px;
+    margin-bottom: 16px;
+  }
   .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
   .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
   .video-caption {
     font-family: 'Source Serif 4', serif;
     font-size: 12px;
     color: var(--light);
-    margin-top: 12px;
+    margin-top: 10px;
     font-style: italic;
   }
 
   /* Image sections */
-  .project-images { padding: 0 60px 100px; max-width: 1400px; }
-  .image-block { margin-bottom: 60px; }
+  .project-images { padding: 48px 60px 60px; max-width: 1400px; }
+  .image-block { margin-bottom: 48px; }
   .image-block img { width: 100%; display: block; }
-  .image-caption {
+
+  .image-descriptor {
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.6;
     color: #555555;
-    margin-top: 16px;
-    max-width: 700px;
+    margin-bottom: 14px;
+    text-align: center;
   }
 
-  .section-divider {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: 60px 60px;
-  }
-
-  .section-header {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--light);
+  /* Additional campaigns section */
+  .campaigns-header {
     padding: 0 60px;
     margin-bottom: 32px;
+  }
+  .campaigns-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.15;
+    color: #121212;
   }
 
   .project-nav { padding: 40px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
@@ -112,12 +105,9 @@
 
   @media (max-width: 768px) {
     nav { padding: 20px 24px; }
-    .project-header { padding: 100px 24px 40px; }
-    .intro-section { flex-direction: column; padding: 0 24px 48px; gap: 40px; }
-    .intro-text { flex: none; width: 100%; }
-    .project-images { padding: 0 24px 80px; }
-    .section-divider { margin: 40px 24px; }
-    .section-header { padding: 0 24px; }
+    .page-wrap { padding: 100px 24px 0; }
+    .project-images { padding: 32px 24px 48px; }
+    .campaigns-header { padding: 0 24px; }
     .project-nav { padding: 32px 24px; }
     footer { padding: 32px 24px; flex-direction: column; gap: 20px; }
   }
@@ -134,16 +124,12 @@
   </ul>
 </nav>
 
-<div class="project-header">
+<div class="page-wrap">
   <a href="index.html" class="back-link">&larr; All Work</a>
-</div>
+  <h1 class="project-title">Women in Medicine Social Campaign</h1>
+  <p class="project-role">Design Lead &mdash; Brand, Digital Campaign &mdash; American Medical Association</p>
+  <p class="project-description">A social media campaign celebrating Women in Medicine Month, designed and produced end to end. Portrait-driven assets, each one personalized while remaining part of a unified visual system. A companion series honored women physicians through history, with a related treatment that extended the campaign across time.</p>
 
-<div class="intro-section">
-  <div class="intro-text">
-    <h1 class="project-title">Women in Medicine Social Campaign</h1>
-    <p class="project-role">Design Lead &mdash; Brand, Digital Campaign &mdash; American Medical Association</p>
-    <p class="project-description">A social media campaign celebrating Women in Medicine Month, designed and produced end to end. Portrait-driven assets put individual physicians front and center, each one personalized while remaining part of a unified visual system. A companion series honored women physicians through history, with a related but distinct treatment that extended the campaign across time.</p>
-  </div>
   <div class="video-wrap">
     <div class="video-container">
       <iframe src="https://www.youtube.com/embed/OYIhQ8gA7ZA?start=0&end=24" allowfullscreen></iframe>
@@ -159,35 +145,36 @@
   </div>
 
   <div class="image-block">
+    <p class="image-descriptor">A companion series honoring women physicians through history.</p>
     <img src="images/WIMM_3.jpg" alt="Women physicians through history">
-    <p class="image-caption">A companion series honoring women physicians through history.</p>
   </div>
 
 </div>
 
-<hr class="section-divider">
-<p class="section-header">Additional Digital Campaigns</p>
+<div class="campaigns-header">
+  <h2 class="campaigns-title">Additional Digital Campaigns</h2>
+</div>
 
 <div class="project-images">
 
   <div class="image-block">
+    <p class="image-descriptor">Developed a digital campaign targeting physicians that reinforced the AMA's role as a trusted advocate for the profession. Designed to convey stability, credibility and professionalism, resulting in a 0.95% click-through rate, nearly three times the AMA average.</p>
     <img src="images/Doctor_day_retargeting.jpg" alt="Doctors Day Retargeting Ads">
-    <p class="image-caption">Developed a digital campaign targeting physicians that reinforced the AMA's role as a trusted advocate for the profession. Designed to convey stability, credibility and professionalism, resulting in a 0.95% click-through rate, nearly three times the AMA average.</p>
   </div>
 
   <div class="image-block">
+    <p class="image-descriptor">Display advertising designed to re-engage prospective members. Copy by Christian Racoma.</p>
     <img src="images/Membership_Q1_retarget_Ads.jpg" alt="Membership Q1 Retargeting Ads">
-    <p class="image-caption">Display advertising designed to re-engage prospective members. Copy by Christian Racoma.</p>
   </div>
 
   <div class="image-block">
+    <p class="image-descriptor"><strong>First Stop Health</strong> &mdash; Digital ad campaigns spanning both sides of the market. Consumer-facing creative to drive member engagement, and B2B campaigns targeting HR and benefits decision-makers at prospective employer partners.</p>
     <img src="images/First_Stop_Health_Ads.jpg" alt="First Stop Health Digital Ads">
-    <p class="image-caption"><strong>First Stop Health</strong> &mdash; Digital ad campaigns spanning both sides of the market. Consumer-facing creative to drive member engagement, and B2B campaigns targeting HR and benefits decision-makers at prospective employer partners.</p>
   </div>
 
   <div class="image-block">
+    <p class="image-descriptor"><strong>UME Curricular Enrichment Program (UCEP)</strong> &mdash; Product graphics for a series of online educational modules helping medical schools modernize their curricula.</p>
     <img src="images/Curriculum_Program_UCEP.jpg" alt="UCEP Product Graphics">
-    <p class="image-caption"><strong>UME Curricular Enrichment Program (UCEP)</strong> &mdash; Product graphics for a series of online educational modules helping medical schools modernize their curricula.</p>
   </div>
 
 </div>
