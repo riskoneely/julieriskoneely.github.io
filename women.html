@@ -4,10 +4,127 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Women in Medicine — Julie Risko Neely</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="project.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&family=Source+Serif+4:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --white: #ffffff; --text: #121212; --muted: #555555; --light: #999; --border: #e8e8e8; }
+  body { font-family: 'Inter', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 24px 60px; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.97); }
+  .nav-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; letter-spacing: 0.05em; text-decoration: none; color: var(--text); }
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--light); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--text); }
+
+  .project-header { padding: 120px 60px 48px; max-width: 900px; }
+  .back-link { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--light); display: inline-block; margin-bottom: 40px; transition: color 0.2s; }
+  .back-link:hover { color: var(--text); }
+
+  /* Top section: text left, video right */
+  .intro-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 0 60px 60px;
+    max-width: 1400px;
+  }
+  .intro-text { flex: 0 0 320px; }
+
+  .project-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.15;
+    color: #121212;
+    margin-bottom: 16px;
+  }
+  .project-role {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #555555;
+    margin-bottom: 28px;
+  }
+  .project-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    border-top: 1px solid var(--border);
+    padding-top: 28px;
+  }
+
+  .video-wrap { flex: 1; }
+  .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+  .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+  .video-caption {
+    font-family: 'Source Serif 4', serif;
+    font-size: 12px;
+    color: var(--light);
+    margin-top: 12px;
+    font-style: italic;
+  }
+
+  /* Image sections */
+  .project-images { padding: 0 60px 100px; max-width: 1400px; }
+  .image-block { margin-bottom: 60px; }
+  .image-block img { width: 100%; display: block; }
+  .image-caption {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555555;
+    margin-top: 16px;
+    max-width: 700px;
+  }
+
+  .section-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 60px 60px;
+  }
+
+  .section-header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--light);
+    padding: 0 60px;
+    margin-bottom: 32px;
+  }
+
+  .project-nav { padding: 40px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
+  .project-nav a { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--light); transition: color 0.2s; }
+  .project-nav a:hover { color: var(--text); }
+
+  footer { border-top: 1px solid var(--border); padding: 40px 60px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 13px; letter-spacing: 0.05em; color: var(--light); }
+  .footer-links { display: flex; gap: 32px; }
+  .footer-links a { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: var(--light); transition: color 0.2s; }
+  .footer-links a:hover { color: var(--text); }
+
+  @media (max-width: 768px) {
+    nav { padding: 20px 24px; }
+    .project-header { padding: 100px 24px 40px; }
+    .intro-section { flex-direction: column; padding: 0 24px 48px; gap: 40px; }
+    .intro-text { flex: none; width: 100%; }
+    .project-images { padding: 0 24px 80px; }
+    .section-divider { margin: 40px 24px; }
+    .section-header { padding: 0 24px; }
+    .project-nav { padding: 32px 24px; }
+    footer { padding: 32px 24px; flex-direction: column; gap: 20px; }
+  }
+</style>
 </head>
 <body>
+
 <nav>
   <a href="index.html" class="nav-name">Julie Risko Neely</a>
   <ul class="nav-links">
@@ -16,24 +133,70 @@
     <li><a href="mailto:riskoneely@gmail.com">Contact</a></li>
   </ul>
 </nav>
-<div class="project-hero">
+
+<div class="project-header">
   <a href="index.html" class="back-link">&larr; All Work</a>
-  <p class="project-label">Putting faces to a movement</p>
-  <h1 class="project-title">Women in Medicine Social Campaign</h1>
-  <div class="project-meta">
-    <div class="meta-item"><p class="meta-label">Client</p><p class="meta-value">American Medical Association</p></div>
-    <div class="meta-item"><p class="meta-label">Role</p><p class="meta-value">Design Lead — Brand, Digital Campaign</p></div>
-    <div class="meta-item"><p class="meta-label">Channels</p><p class="meta-value">Social Media, Digital Display, Web Banners</p></div>
+</div>
+
+<div class="intro-section">
+  <div class="intro-text">
+    <h1 class="project-title">Women in Medicine Social Campaign</h1>
+    <p class="project-role">Design Lead &mdash; Brand, Digital Campaign &mdash; American Medical Association</p>
+    <p class="project-description">A social media campaign celebrating Women in Medicine Month, designed and produced end to end. Portrait-driven assets put individual physicians front and center, each one personalized while remaining part of a unified visual system. A companion series honored women physicians through history, with a related but distinct treatment that extended the campaign across time.</p>
   </div>
-  <p class="project-description">A social media campaign celebrating Women in Medicine Month — designed to honor AMA physician members with bold, portrait-driven social assets that demanded attention and communicated pride. Each execution was built around a consistent visual system flexible enough to feature dozens of individual physicians while remaining immediately recognizable as a campaign.</p>
+  <div class="video-wrap">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/OYIhQ8gA7ZA?start=0&end=24" allowfullscreen></iframe>
+    </div>
+    <p class="video-caption">Campaign assets designed by Julie Risko Neely. Video production by the AMA video team.</p>
+  </div>
 </div>
+
 <div class="project-images">
-  <img src="images/Women_in_med_hero.jpg" alt="Women in Medicine campaign assets">
+
+  <div class="image-block">
+    <img src="images/WIMM_2.jpg" alt="Women in Medicine campaign assets">
+  </div>
+
+  <div class="image-block">
+    <img src="images/WIMM_3.jpg" alt="Women physicians through history">
+    <p class="image-caption">A companion series honoring women physicians through history.</p>
+  </div>
+
 </div>
+
+<hr class="section-divider">
+<p class="section-header">Additional Digital Campaigns</p>
+
+<div class="project-images">
+
+  <div class="image-block">
+    <img src="images/Doctor_day_retargeting.jpg" alt="Doctors Day Retargeting Ads">
+    <p class="image-caption">Developed a digital campaign targeting physicians that reinforced the AMA's role as a trusted advocate for the profession. Designed to convey stability, credibility and professionalism, resulting in a 0.95% click-through rate, nearly three times the AMA average.</p>
+  </div>
+
+  <div class="image-block">
+    <img src="images/Membership_Q1_retarget_Ads.jpg" alt="Membership Q1 Retargeting Ads">
+    <p class="image-caption">Display advertising designed to re-engage prospective members. Copy by Christian Racoma.</p>
+  </div>
+
+  <div class="image-block">
+    <img src="images/First_Stop_Health_Ads.jpg" alt="First Stop Health Digital Ads">
+    <p class="image-caption"><strong>First Stop Health</strong> &mdash; Digital ad campaigns spanning both sides of the market. Consumer-facing creative to drive member engagement, and B2B campaigns targeting HR and benefits decision-makers at prospective employer partners.</p>
+  </div>
+
+  <div class="image-block">
+    <img src="images/Curriculum_Program_UCEP.jpg" alt="UCEP Product Graphics">
+    <p class="image-caption"><strong>UME Curricular Enrichment Program (UCEP)</strong> &mdash; Product graphics for a series of online educational modules helping medical schools modernize their curricula.</p>
+  </div>
+
+</div>
+
 <div class="project-nav">
   <a href="wellbeing.html">&larr; Previous</a>
   <a href="advocacy.html">Next Project &rarr;</a>
 </div>
+
 <footer>
   <span class="footer-name">Julie Risko Neely</span>
   <div class="footer-links">
@@ -42,5 +205,6 @@
     <a href="https://behance.net/julieriskoneely" target="_blank">Behance</a>
   </div>
 </footer>
+
 </body>
 </html>
