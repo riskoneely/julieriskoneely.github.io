@@ -4,10 +4,75 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Joy in Medicine — Julie Risko Neely</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="project.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&family=Source+Serif+4:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --white: #ffffff; --text: #121212; --muted: #555555; --light: #999; --border: #e8e8e8; }
+  body { font-family: 'Inter', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 24px 60px; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.97); }
+  .nav-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; letter-spacing: 0.05em; text-decoration: none; color: var(--text); }
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--light); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--text); }
+
+  .project-header { padding: 120px 60px 48px; max-width: 760px; }
+  .back-link { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--light); display: inline-block; margin-bottom: 40px; transition: color 0.2s; }
+  .back-link:hover { color: var(--text); }
+
+  .project-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.15;
+    color: #121212;
+    margin-bottom: 16px;
+  }
+  .project-role {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #555555;
+    margin-bottom: 28px;
+  }
+  .project-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    border-top: 1px solid var(--border);
+    padding-top: 32px;
+  }
+
+  .project-images { padding: 48px 60px 100px; }
+  .image-block { margin-bottom: 60px; width: 100%; }
+  .image-block img { width: 100%; display: block; }
+
+  .project-nav { padding: 40px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
+  .project-nav a { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--light); transition: color 0.2s; }
+  .project-nav a:hover { color: var(--text); }
+
+  footer { border-top: 1px solid var(--border); padding: 40px 60px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 13px; letter-spacing: 0.05em; color: var(--light); }
+  .footer-links { display: flex; gap: 32px; }
+  .footer-links a { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: var(--light); transition: color 0.2s; }
+  .footer-links a:hover { color: var(--text); }
+
+  @media (max-width: 768px) {
+    nav { padding: 20px 24px; }
+    .project-header { padding: 100px 24px 40px; }
+    .project-images { padding: 32px 24px 80px; }
+    .project-nav { padding: 32px 24px; }
+    footer { padding: 32px 24px; flex-direction: column; gap: 20px; }
+  }
+</style>
 </head>
 <body>
+
 <nav>
   <a href="index.html" class="nav-name">Julie Risko Neely</a>
   <ul class="nav-links">
@@ -16,24 +81,25 @@
     <li><a href="mailto:riskoneely@gmail.com">Contact</a></li>
   </ul>
 </nav>
-<div class="project-hero">
+
+<div class="project-header">
   <a href="index.html" class="back-link">&larr; All Work</a>
-  <p class="project-label">When recognition becomes a campaign</p>
   <h1 class="project-title">Joy in Medicine — Integrated Campaign</h1>
-  <div class="project-meta">
-    <div class="meta-item"><p class="meta-label">Client</p><p class="meta-value">American Medical Association</p></div>
-    <div class="meta-item"><p class="meta-label">Role</p><p class="meta-value">Design Lead — Brand, Campaign, Event, Print, Digital</p></div>
-    <div class="meta-item"><p class="meta-label">Impact</p><p class="meta-value">14M+ impressions &middot; Renewal of 3 major health system contracts</p></div>
-  </div>
-  <p class="project-description">A national integrated campaign recognizing health systems committed to physician well-being. Work spanned out-of-home advertising, digital display, event signage, print collateral, and customized crystal awards personalized for each recognized health system. The campaign generated 14M+ impressions and directly supported renewal of three major health system contracts.</p>
+  <p class="project-role">Design Lead &mdash; Brand, Campaign, Event, Print, Digital &mdash; American Medical Association</p>
+  <p class="project-description">A national out-of-home campaign recognizing health systems committed to physician well-being, running across major U.S. markets in November and December 2025. The campaign generated 14M+ impressions and supported renewal of three major health system contracts. In addition to outdoor advertising, the program included digital display advertising and a recognition event where custom crystal awards were presented to Bronze, Silver and Gold level health system honorees.</p>
 </div>
+
 <div class="project-images">
-  <img src="images/OOH_campaign_hero.jpg" alt="Joy in Medicine billboard campaign">
+  <div class="image-block">
+    <img src="images/OOH_Detail_1.jpg" alt="Joy in Medicine integrated campaign">
+  </div>
 </div>
+
 <div class="project-nav">
   <a href="icph.html">&larr; Previous</a>
   <a href="parexel.html">Next Project &rarr;</a>
 </div>
+
 <footer>
   <span class="footer-name">Julie Risko Neely</span>
   <div class="footer-links">
@@ -42,5 +108,6 @@
     <a href="https://behance.net/julieriskoneely" target="_blank">Behance</a>
   </div>
 </footer>
+
 </body>
 </html>
