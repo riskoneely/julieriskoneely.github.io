@@ -80,10 +80,17 @@
     font-style: italic;
     margin-bottom: 16px;
   }
+  .doc-embed-wrap {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
   .doc-embed {
     width: 100%;
     height: 600px;
     border: none;
+    display: block;
   }
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
@@ -152,13 +159,17 @@
   <div class="doc-block">
     <p class="doc-label">2024 Annual Report</p>
     <p class="doc-credit">Copy by Christian Racoma</p>
-    <iframe class="doc-embed" src="https://drive.google.com/file/d/177pMrZuYuklf5haSqyDF04cFwi9hS-vr/preview" allow="autoplay"></iframe>
+    <div class="doc-embed-wrap">
+      <iframe class="doc-embed" src="https://drive.google.com/file/d/177pMrZuYuklf5haSqyDF04cFwi9hS-vr/preview" allow="autoplay"></iframe>
+    </div>
   </div>
 
   <div class="doc-block">
     <p class="doc-label">PS2 Revenue Cycle Management</p>
     <p class="doc-credit">Copy by Steve Brown</p>
-    <iframe class="doc-embed" src="https://drive.google.com/file/d/18X7kXuhNQbvqqYF9-sMVjebPkSW9RfGp/preview" allow="autoplay"></iframe>
+    <div class="doc-embed-wrap">
+      <iframe class="doc-embed" src="https://drive.google.com/file/d/18X7kXuhNQbvqqYF9-sMVjebPkSW9RfGp/preview" allow="autoplay"></iframe>
+    </div>
   </div>
 
 </div>
