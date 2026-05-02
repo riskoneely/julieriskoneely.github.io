@@ -20,20 +20,20 @@
 
   .about { padding: 120px 60px 100px; max-width: 760px; margin: 0 auto; }
 
+  .about-photo {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-bottom: 32px;
+  }
+
   .page-title {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 36px;
     line-height: 1.15;
     color: #121212;
-    margin-bottom: 40px;
-  }
-
-  .about-photo {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .about-body {
@@ -63,9 +63,16 @@
     font-weight: 300;
     font-size: 22px;
     letter-spacing: 0.02em;
-    text-transform: none;
     color: #121212;
     margin-bottom: 20px;
+  }
+
+  .education-text {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
   }
 
   .expertise-grid {
@@ -81,14 +88,6 @@
     color: #555;
     padding: 10px 0;
     border-bottom: 1px solid var(--border);
-  }
-
-  .education-text {
-    font-family: 'Source Serif 4', serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.8;
-    color: #555;
   }
 
   .contact-links {
@@ -110,14 +109,15 @@
   }
   .contact-link:hover { border-color: var(--text); color: var(--text); }
 
-  footer { border-top: 1px solid var(--border); padding: 40px 60px; display: flex; justify-content: center; align-items: center; }
-  .footer-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 13px; letter-spacing: 0.05em; color: var(--light); text-decoration: none; display: block; text-align: center; width: 100%; }
+  footer { border-top: 1px solid var(--border); padding: 40px 60px; display: flex; justify-content: center; align-items: center; gap: 48px; }
+  .footer-link { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #666666; text-decoration: none; transition: color 0.2s; }
+  .footer-link:hover { color: var(--text); }
 
   @media (max-width: 768px) {
     nav { padding: 20px 24px; }
     .about { padding: 100px 24px 80px; }
     .expertise-grid { grid-template-columns: 1fr; }
-    footer { padding: 32px 24px; }
+    footer { padding: 32px 24px; gap: 32px; }
   }
 </style>
 </head>
@@ -142,6 +142,12 @@
 
   <hr class="divider">
 
+  <p class="section-label">Education</p>
+  <p class="education-text">Rhode Island School of Design &mdash; BFA in Graphic Design<br>
+  Brown University &mdash; Liberal Arts coursework via RISD/Brown cross-registration</p>
+
+  <hr class="divider">
+
   <p class="section-label">Expertise</p>
   <div class="expertise-grid">
     <span class="expertise-item">Brand Strategy</span>
@@ -160,22 +166,22 @@
 
   <hr class="divider">
 
-  <p class="section-label">Education</p>
-  <p class="education-text">Rhode Island School of Design &mdash; BFA in Graphic Design<br>
-  Brown University &mdash; Liberal Arts coursework via RISD/Brown cross-registration</p>
-
-  <hr class="divider">
-
   <p class="section-label">Get in touch</p>
   <div class="contact-links">
     <a href="mailto:riskoneely@gmail.com" class="contact-link">riskoneely@gmail.com</a>
     <a href="https://linkedin.com/in/julieriskoneely" target="_blank" class="contact-link">LinkedIn</a>
   </div>
 
+  <hr class="divider">
+
+  <p class="section-label">R&eacute;sum&eacute;</p>
+  <a href="https://drive.google.com/file/d/12u0mYesNR5oUgozkdUC1sRzZt5y6ZREV/view?usp=drive_link" target="_blank" class="contact-link">Julie_Risko_Neely_Resume.pdf</a>
+
 </section>
 
 <footer>
-  <a href="about.html" class="footer-name">Julie Risko Neely</a>
+  <a href="mailto:riskoneely@gmail.com" class="footer-link">Email</a>
+  <a href="https://linkedin.com/in/julieriskoneely" target="_blank" class="footer-link">LinkedIn</a>
 </footer>
 
 </body>
