@@ -22,55 +22,22 @@
   .back-link { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: #666666; display: inline-block; margin-bottom: 40px; transition: color 0.2s; }
   .back-link:hover { color: var(--text); }
 
-  .project-title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 1.15;
-    color: #121212;
-    margin-bottom: 16px;
-  }
-  .project-role {
-    font-family: 'Source Serif 4', serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #555555;
-    margin-bottom: 28px;
-  }
-  .project-description {
-    font-family: 'Source Serif 4', serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #555555;
-    border-top: 1px solid var(--border);
-    padding-top: 32px;
-  }
+  .project-title { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 36px; line-height: 1.15; color: #121212; margin-bottom: 16px; }
+  .project-role { font-family: 'Source Serif 4', serif; font-weight: 400; font-size: 15px; line-height: 24px; color: #555555; margin-bottom: 28px; }
+  .project-role-label { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #666666; margin-bottom: 6px; display: block; }
+  .project-description { font-family: 'Source Serif 4', serif; font-weight: 400; font-size: 16px; line-height: 1.7; color: #555555; border-top: 1px solid var(--border); padding-top: 32px; }
+  .project-description p { margin-bottom: 20px; }
+  .project-description p:last-child { margin-bottom: 0; }
 
-  /* Flipbook */
   .flipbook-wrap {
     padding: 48px 60px 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .flipbook-container {
-    width: 100%;
-    max-width: 1200px;
-  }
-  .flipbook-container iframe {
-    width: 100%;
-    height: 700px;
-    border: none;
-  }
-  .flipbook-caption {
-    font-family: 'Source Serif 4', serif;
-    font-size: 13px;
-    color: var(--light);
-    margin-top: 12px;
-    font-style: italic;
-  }
+  .flipbook-container { width: 100%; max-width: 1200px; }
+  .flipbook-container iframe { width: 100%; height: 700px; border: none; }
+  .flipbook-caption { font-family: 'Source Serif 4', serif; font-size: 13px; color: var(--light); margin-top: 12px; font-style: italic; }
 
   .project-nav { padding: 40px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
   .project-nav a { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: #666666; transition: color 0.2s; }
@@ -81,7 +48,7 @@
 
   @media (max-width: 768px) {
     nav { padding: 20px 24px; }
-    .project-header { padding: 100px 24px 40px; }
+    .project-header { padding: 100px 24px 20px; }
     .flipbook-wrap { padding: 32px 24px 48px; }
     .flipbook-container iframe { height: 300px; }
     .project-nav { padding: 32px 24px; }
@@ -102,8 +69,15 @@
 <div class="project-header">
   <a href="index.html" class="back-link">&larr; All Work</a>
   <h1 class="project-title">Guide to Clinical Trials &mdash; Asia Pacific</h1>
-  <p class="project-role">Senior Designer &mdash; Publication Layout &amp; Production<br>Art director, concept development &mdash; Ryan Richard-Scro of Orange Square</p>
-  <p class="project-description">An 80-page market guide for PAREXEL, a global clinical research organization, covering clinical trial landscapes across the Asia Pacific region. Work involved translating content into clear, accessible layouts within PAREXEL's established brand standards, producing a publication to serve as a key sales and educational tool across 13 countries. Produced in collaboration with Orange Square.</p>
+  <p class="project-role">
+    <span class="project-role-label">My Role</span>
+    Senior Designer, publication layout and production<br>
+    Art direction: Ryan Richard-Scro, Orange Square
+  </p>
+  <div class="project-description">
+    <p>PAREXEL, a global clinical research organization, needed an 80-page market guide covering clinical trial landscapes across the Asia Pacific region — a key sales and educational tool for use across 13 countries. The challenge was translating dense, technical content into layouts that were clear and accessible while working strictly within PAREXEL's established brand standards.</p>
+    <p>The art director at Orange Square established the visual direction and designed the opening pages. I joined the project and completed the remaining layouts, sourcing and selecting photography throughout and producing the publication to final file.</p>
+  </div>
 </div>
 
 <div class="flipbook-wrap">
