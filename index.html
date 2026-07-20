@@ -12,14 +12,12 @@
   :root { --white: #ffffff; --text: #121212; --muted: #555555; --light: #999; --border: #e8e8e8; }
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
-
   /* NAV */
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 24px 60px; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.97); }
   .nav-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; letter-spacing: 0.05em; text-decoration: none; color: var(--text); }
   .nav-links { display: flex; gap: 40px; list-style: none; }
   .nav-links a { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: #666666; transition: color 0.2s; font-weight: 300; }
   .nav-links a:hover { color: var(--text); }
-
   /* INTRO */
   .intro {
     padding: 140px 60px 16px;
@@ -35,10 +33,8 @@
     color: #444444;
     letter-spacing: -0.01em;
   }
-
   /* PROJECT LIST */
   .projects { padding: 20px 0 120px; max-width: 1500px; margin: 0 auto; }
-
   .project-item {
     display: flex;
     align-items: center;
@@ -51,15 +47,11 @@
   }
   .project-item:hover { opacity: 0.75; }
   .project-item:hover .project-img { transform: scale(1.02); }
-
   .project-item:nth-child(odd) { flex-direction: row-reverse; justify-content: flex-start; }
   .project-item:nth-child(even) { flex-direction: row; justify-content: flex-end; }
-
   .project-text { flex: 0 0 320px; }
-
   .project-item:nth-child(odd) .project-text { padding-left: 60px; }
   .project-item:nth-child(even) .project-text { padding-left: 48px; }
-
   .project-title {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -76,24 +68,18 @@
     color: #555555;
     letter-spacing: 0.02em;
   }
-
   .project-img-wrap { flex: 0 0 70%; overflow: hidden; }
   .project-img-wrap.large { flex: 0 0 76%; }
   .project-img { width: 100%; display: block; transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-
   /* Individual spacing overrides */
   #p-acph .project-text { padding-left: 60px; }
-
   /* FOOTER */
   footer { padding: 48px 60px; display: flex; justify-content: center; align-items: center; border-top: 1px solid var(--border); }
   .footer-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 15px; letter-spacing: 0.05em; color: var(--light); text-decoration: none; }
-
   /* View project — mobile only, hidden on desktop */
   .view-project { display: none; }
-
   @media (max-width: 900px) {
     nav { padding: 20px 24px; }
-
     .intro {
       padding: 80px 24px 12px;
     }
@@ -101,9 +87,7 @@
       font-size: 18px;
       line-height: 1.5;
     }
-
     .projects { padding: 16px 32px 80px; }
-
     .view-project {
       display: block;
       font-size: 10px;
@@ -114,14 +98,12 @@
       font-family: 'Inter', sans-serif;
       font-weight: 300;
     }
-
     .project-item {
       flex-direction: column !important;
       padding: 48px 0;
       justify-content: flex-start;
       align-items: flex-start;
     }
-
     .project-text {
       flex: none;
       width: 100%;
@@ -129,26 +111,22 @@
       padding: 0 0 20px 0 !important;
       order: 1;
     }
-
     .project-img-wrap {
       flex: none !important;
       width: 100%;
       order: 2;
     }
-
     /* Reset all individual desktop spacing overrides for mobile */
     #p-wellbeing .project-text,
     #p-advocacy .project-text,
     #p-acph .project-text,
     #p-icph .project-text,
     #p-joy .project-text { padding: 0 0 20px 0 !important; }
-
     footer { padding: 32px 24px; flex-direction: column; gap: 20px; }
   }
 </style>
 </head>
 <body>
-
 <nav>
   <a href="index.html" class="nav-name">Julie Risko Neely</a>
   <ul class="nav-links">
@@ -156,13 +134,10 @@
     <li><a href="about.html">About</a></li>
   </ul>
 </nav>
-
 <div class="intro">
   <p class="intro-text">Senior designer specializing in brand identity and multi-channel campaigns for mission-driven organizations.</p>
 </div>
-
 <section class="projects">
-
   <a href="wellbeing.html" class="project-item" id="p-wellbeing">
     <div class="project-text">
       <p class="project-title">Reimagining employee well-being</p>
@@ -173,7 +148,6 @@
       <img src="images/Wellbeing_hero.jpg" alt="Employee Well-being Rebrand" class="project-img">
     </div>
   </a>
-
   <a href="women.html" class="project-item" id="p-women">
     <div class="project-text">
       <p class="project-title">Putting faces to a movement</p>
@@ -184,7 +158,6 @@
       <img src="images/Women_in_med_hero.jpg" alt="Women in Medicine Campaign" class="project-img">
     </div>
   </a>
-
   <a href="advocacy.html" class="project-item" id="p-advocacy">
     <div class="project-text">
       <p class="project-title">Where advocacy meets identity</p>
@@ -195,7 +168,6 @@
       <img src="images/State_advocacy_hero.jpg" alt="State Advocacy Summit" class="project-img">
     </div>
   </a>
-
   <a href="publications.html" class="project-item" id="p-publications">
     <div class="project-text">
       <p class="project-title">Mission-driven design</p>
@@ -206,7 +178,6 @@
       <img src="images/Documents_hero.jpg" alt="AMA Publications" class="project-img">
     </div>
   </a>
-
   <a href="acph.html" class="project-item" id="p-acph">
     <div class="project-text">
       <p class="project-title">Building a conference brand from the ground up</p>
@@ -217,7 +188,6 @@
       <img src="images/ACPH_2023_hero.jpg" alt="ACPH 2023" class="project-img">
     </div>
   </a>
-
   <a href="icph.html" class="project-item" id="p-icph">
     <div class="project-text">
       <p class="project-title">A global conversation, unified by design</p>
@@ -228,7 +198,6 @@
       <img src="images/ICPH_2022_hero.jpg" alt="ICPH 2022" class="project-img">
     </div>
   </a>
-
   <a href="joy.html" class="project-item" id="p-joy">
     <div class="project-text">
       <p class="project-title">When recognition becomes a campaign</p>
@@ -239,7 +208,6 @@
       <img src="images/OOH_campaign_hero.jpg" alt="Joy in Medicine" class="project-img">
     </div>
   </a>
-
   <a href="parexel.html" class="project-item">
     <div class="project-text">
       <p class="project-title">Eighty pages. Thirteen countries. One coherent story.</p>
@@ -250,23 +218,9 @@
       <img src="images/PAREXEL_hero_2.jpg" alt="PAREXEL Clinical Trial Guide" class="project-img">
     </div>
   </a>
-
-  <a href="booksbreakfast.html" class="project-item" id="p-books">
-    <div class="project-text">
-      <p class="project-title">Design for a cause. A brand built to last.</p>
-      <p class="project-role">Brand Identity, Print, Events &amp; Communications</p>
-      <span class="view-project">View project</span>
-    </div>
-    <div class="project-img-wrap">
-      <img src="images/Books_breakfast_hero.jpg" alt="Books and Breakfast" class="project-img">
-    </div>
-  </a>
-
 </section>
-
 <footer>
   <a href="about.html" class="footer-name">Julie Risko Neely</a>
 </footer>
-
 </body>
 </html>
