@@ -11,33 +11,27 @@
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
   :root { --white: #ffffff; --text: #121212; --muted: #555555; --light: #999; --border: #e8e8e8; }
   body { font-family: 'Inter', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
-
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 24px 60px; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.97); }
   .nav-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; letter-spacing: 0.05em; text-decoration: none; color: var(--text); }
   .nav-links { display: flex; gap: 40px; list-style: none; }
   .nav-links a { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: #666666; transition: color 0.2s; }
   .nav-links a:hover { color: var(--text); }
-
   .project-header { padding: 120px 60px 48px; max-width: 760px; }
   .back-link { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: #666666; display: inline-block; margin-bottom: 40px; transition: color 0.2s; }
   .back-link:hover { color: var(--text); }
-
   .project-title { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 36px; line-height: 1.15; color: #121212; margin-bottom: 16px; }
   .project-role { font-family: 'Source Serif 4', serif; font-weight: 400; font-size: 15px; line-height: 24px; color: #555555; margin-bottom: 28px; }
   .project-role-label { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #666666; margin-bottom: 6px; display: block; }
   .project-description { font-family: 'Source Serif 4', serif; font-weight: 400; font-size: 16px; line-height: 1.7; color: #555555; border-top: 1px solid var(--border); padding-top: 32px; }
   .project-description p { margin-bottom: 20px; }
   .project-description p:last-child { margin-bottom: 0; }
-
   .project-images { padding: 48px 60px 0; }
   .image-block { margin-bottom: 60px; width: 100%; }
   .image-block img { width: 100%; display: block; }
-
   .video-block { padding: 0 60px 60px; max-width: 760px; margin-left: auto; margin-right: auto; }
   .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
   .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
   .video-caption { font-family: 'Source Serif 4', serif; font-size: 13px; color: #666666; margin-top: 12px; font-style: italic; }
-
   .campaigns-section { padding: 0 60px 100px; }
   .campaigns-title { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 36px; line-height: 1.15; color: #121212; margin-bottom: 48px; padding-top: 20px; border-top: 1px solid var(--border); }
   .campaign-block { margin-bottom: 60px; }
@@ -46,14 +40,11 @@
   .campaign-label { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 22px; line-height: 1.2; color: #121212; margin-bottom: 10px; }
   .behance-link { font-family: 'Source Serif 4', serif; font-size: 15px; color: #555555; margin-top: 12px; display: block; }
   .behance-link a { color: #555555; }
-
   .project-nav { padding: 40px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
   .project-nav a { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: #666666; transition: color 0.2s; }
   .project-nav a:hover { color: var(--text); }
-
   footer { border-top: 1px solid var(--border); padding: 40px 60px; display: flex; justify-content: center; align-items: center; }
   .footer-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 13px; letter-spacing: 0.05em; color: var(--light); text-decoration: none; display: block; text-align: center; width: 100%; }
-
   @media (max-width: 768px) {
     nav { padding: 20px 24px; }
     .project-header { padding: 100px 24px 20px; }
@@ -66,7 +57,6 @@
 </style>
 </head>
 <body>
-
 <nav>
   <a href="index.html" class="nav-name">Julie Risko Neely</a>
   <ul class="nav-links">
@@ -74,10 +64,9 @@
     <li><a href="about.html">About</a></li>
   </ul>
 </nav>
-
 <div class="project-header">
   <a href="index.html" class="back-link">&larr; All Work</a>
-  <h1 class="project-title">Women in Medicine Social Campaign</h1>
+  <h1 class="project-title">Integrated digital campaigns</h1>
   <p class="project-role">
     <span class="project-role-label">My Role</span>
     Sole designer, concept through delivery
@@ -87,7 +76,6 @@
     <p>Working from a pool of real AMA member physician photos, I developed a visual system of vibrant color, geometric shapes and bold typography, designed to feel current across Instagram, Facebook, LinkedIn and YouTube. A companion series extended the concept into history, honoring women physicians from earlier eras with a visual treatment that echoes the contemporary work.</p>
   </div>
 </div>
-
 <div class="project-images">
   <div class="image-block">
     <img src="images/WIMM_2.jpg" alt="Women in Medicine campaign assets">
@@ -96,49 +84,38 @@
     <img src="images/WIMM_3.jpg" alt="Women physicians through history">
   </div>
 </div>
-
 <div class="video-block">
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/OYIhQ8gA7ZA?start=0&end=24" allowfullscreen></iframe>
   </div>
   <p class="video-caption">Campaign assets designed by Julie Risko Neely. Video production by the AMA video team.</p>
 </div>
-
 <div class="campaigns-section">
-
   <h2 class="campaigns-title">Additional Digital Campaigns</h2>
-
   <div class="campaign-block">
     <p class="campaign-descriptor">A retargeting campaign designed to reinforce the AMA's role as a trusted advocate for physicians. The visual approach emphasized stability and professionalism. The campaign achieved a 0.95% click-through rate, nearly three times the AMA average.</p>
     <img src="images/Doctor_day_retargeting.jpg" alt="Doctors Day Retargeting Ads">
   </div>
-
   <div class="campaign-block">
     <p class="campaign-descriptor">Display advertising designed to re-engage prospective members across digital platforms. Copy by Christian Racoma.</p>
     <img src="images/Membership_Q1_retarget_Ads.jpg" alt="Membership Q1 Retargeting Ads">
   </div>
-
   <div class="campaign-block">
     <p class="campaign-descriptor">Product graphics for the AMA UME Curricular Enrichment Program, a series of online educational modules helping medical schools modernize their curricula. The challenge was applying a consistent visual language across multiple module formats and screen sizes.</p>
     <img src="images/Curriculum_Program_UCEP.jpg" alt="UCEP Product Graphics">
   </div>
-
   <div class="campaign-block">
     <p class="campaign-label">First Stop Health</p>
     <p class="campaign-descriptor">Five years of B2B and B2C digital campaign work for a fast-growing healthcare telemedicine company, spanning sales enablement, member engagement and employer-facing advertising. (View additional First Stop Health work <a href="https://www.behance.net/gallery/91442263/Healthcare-Telemedicine?platform=direct" target="_blank" style="color: #555555; font-weight: 400; text-decoration: underline;"><strong>here</strong></a>.)</p>
     <img src="images/First_Stop_Health_Ads.jpg" alt="First Stop Health Digital Ads">
   </div>
-
 </div>
-
 <div class="project-nav">
   <a href="wellbeing.html">&larr; Previous</a>
   <a href="advocacy.html">Next Project &rarr;</a>
 </div>
-
 <footer>
   <a href="about.html" class="footer-name">Julie Risko Neely</a>
 </footer>
-
 </body>
 </html>
