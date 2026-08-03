@@ -35,6 +35,10 @@
   .flipbook-container { width: 100%; max-width: 1200px; }
   .flipbook-container iframe { width: 100%; height: 700px; border: none; }
   .flipbook-caption { font-family: 'Source Serif 4', serif; font-size: 13px; color: var(--light); margin-top: 12px; font-style: italic; }
+  .project-images { padding: 0 60px 100px; }
+  .image-block { margin-bottom: 60px; width: 100%; }
+  .image-block:last-child { margin-bottom: 0; }
+  .image-block img { width: 100%; display: block; }
   .project-nav { padding: 40px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
   .project-nav a { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: #666666; transition: color 0.2s; }
   .project-nav a:hover { color: var(--text); }
@@ -45,6 +49,7 @@
     .project-header { padding: 100px 24px 20px; }
     .flipbook-wrap { padding: 32px 24px 48px; }
     .flipbook-container iframe { height: 300px; }
+    .project-images { padding: 0 24px 80px; }
     .project-nav { padding: 32px 24px; }
     footer { padding: 32px 24px; flex-direction: column; gap: 20px; }
   }
@@ -77,6 +82,17 @@
     <iframe src="https://online.fliphtml5.com/takml/pomq/" scrolling="no" allowfullscreen="true" sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"></iframe>
   </div>
   <p class="flipbook-caption">Use the arrows to page through the publication.</p>
+</div>
+<div class="project-images">
+  <div class="image-block">
+    <img src="images/Parexel_Detail_1.jpg" alt="PAREXEL Clinical Trial Guide detail 1">
+  </div>
+  <div class="image-block">
+    <img src="images/Parexel_Detail_2.jpg" alt="PAREXEL Clinical Trial Guide detail 2">
+  </div>
+  <div class="image-block">
+    <img src="images/Parexel_Detail_3.jpg" alt="PAREXEL Clinical Trial Guide detail 3">
+  </div>
 </div>
 <div class="project-nav">
   <a href="acph.html">&larr; Previous</a>
