@@ -11,22 +11,18 @@
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
   :root { --white: #ffffff; --text: #121212; --muted: #555555; --light: #999; --border: #e8e8e8; }
   body { font-family: 'Inter', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
-
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 24px 60px; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.97); }
   .nav-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; letter-spacing: 0.05em; text-decoration: none; color: var(--text); }
   .nav-links { display: flex; gap: 40px; list-style: none; }
   .nav-links a { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: #666666; transition: color 0.2s; }
   .nav-links a:hover { color: var(--text); }
-
   .about { padding: 120px 60px 100px; max-width: 760px; margin: 0 auto; }
-
   .about-photo {
     width: 100%;
     max-width: 400px;
     display: block;
     margin-bottom: 32px;
   }
-
   .page-title {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -35,7 +31,6 @@
     color: #121212;
     margin-bottom: 32px;
   }
-
   .about-body {
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
@@ -46,7 +41,6 @@
     border-top: 1px solid var(--border);
     padding-top: 32px;
   }
-
   .about-body-cont {
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
@@ -55,9 +49,7 @@
     color: #555555;
     margin-bottom: 22px;
   }
-
   .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
-
   .section-label {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -66,7 +58,6 @@
     color: #121212;
     margin-bottom: 20px;
   }
-
   .education-text {
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
@@ -74,13 +65,11 @@
     line-height: 1.8;
     color: #555;
   }
-
   .expertise-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 48px;
   }
-
   .expertise-item {
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
@@ -89,13 +78,11 @@
     padding: 10px 0;
     border-bottom: 1px solid var(--border);
   }
-
   .contact-links {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
-
   .contact-link {
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
@@ -108,11 +95,9 @@
     transition: border-color 0.2s;
   }
   .contact-link:hover { border-color: var(--text); color: var(--text); }
-
   footer { border-top: 1px solid var(--border); padding: 40px 60px; display: flex; justify-content: center; align-items: center; gap: 48px; }
   .footer-link { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #666666; text-decoration: none; transition: color 0.2s; }
   .footer-link:hover { color: var(--text); }
-
   @media (max-width: 768px) {
     nav { padding: 20px 24px; }
     .about { padding: 100px 24px 80px; }
@@ -122,7 +107,6 @@
 </style>
 </head>
 <body>
-
 <nav>
   <a href="index.html" class="nav-name">Julie Risko Neely</a>
   <ul class="nav-links">
@@ -130,24 +114,15 @@
     <li><a href="about.html">About</a></li>
   </ul>
 </nav>
-
 <section class="about">
-
   <img src="images/About_photo.png" alt="Julie Risko Neely" class="about-photo">
   <h1 class="page-title">About</h1>
-
-  <p class="about-body">I'm an experienced graphic designer looking for a collaborative, curious team to call home. I love creating smart, meaningful work alongside talented people who work hard and don't take themselves too seriously. I care about brand, typography and beautifully made things, and I've spent my career turning marketing ideas into thoughtful, well-crafted design across print, digital and physical spaces.</p>
-
-  <p class="about-body-cont">When I step away from work I refuel in the peace and beauty of the wilderness, often with one of my sons or a friend along for the ride.</p>
-
+  <p class="about-body">Julie Risko Neely is an Art Director and Senior Designer with over 10 years of experience partnering with Marketing and Creative teams, external agencies, and executive stakeholders to design and launch dynamic integrated campaigns. She is an expert at delivering fast and diverse multi-channel content that ignites audiences and revenue growth. As she is exiting a year-long personal sabbatical, Julie is now seeking her next full-time career role.</p>
   <hr class="divider">
-
   <p class="section-label">Education</p>
   <p class="education-text">Rhode Island School of Design &mdash; BFA in Graphic Design<br>
   Brown University &mdash; Liberal Arts coursework via RISD/Brown cross-registration</p>
-
   <hr class="divider">
-
   <p class="section-label">Expertise</p>
   <div class="expertise-grid">
     <span class="expertise-item">Brand Strategy</span>
@@ -163,26 +138,19 @@
     <span class="expertise-item">Stakeholder Collaboration</span>
     <span class="expertise-item">Data Visualization</span>
   </div>
-
   <hr class="divider">
-
   <p class="section-label">Get in touch</p>
   <div class="contact-links">
     <a href="mailto:riskoneely@gmail.com" class="contact-link">riskoneely@gmail.com</a>
     <a href="https://linkedin.com/in/julieriskoneely" target="_blank" class="contact-link">LinkedIn</a>
   </div>
-
   <hr class="divider">
-
   <p class="section-label">R&eacute;sum&eacute;</p>
   <a href="https://drive.google.com/file/d/1bzzyQEJlQPspb6m1BEy0NMDXqaoUHCsh/view?usp=sharing" target="_blank" class="contact-link">Julie_Risko_Neely_Resume.pdf</a>
-
 </section>
-
 <footer>
   <a href="mailto:riskoneely@gmail.com" class="footer-link">Email</a>
   <a href="https://linkedin.com/in/julieriskoneely" target="_blank" class="footer-link">LinkedIn</a>
 </footer>
-
 </body>
 </html>
