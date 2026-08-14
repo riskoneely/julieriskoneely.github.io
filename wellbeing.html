@@ -45,14 +45,22 @@
     margin-bottom: 6px;
     display: block;
   }
+  .header-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+  .hero-image {
+    width: 100%;
+    display: block;
+    margin-bottom: 32px;
+  }
   .project-description {
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
     color: #555555;
-    border-top: 1px solid var(--border);
-    padding-top: 32px;
   }
   .project-description p {
     margin-bottom: 20px;
@@ -60,7 +68,7 @@
   .project-description p:last-child {
     margin-bottom: 0;
   }
-  .project-images { padding: 48px 60px 100px; }
+  .project-images { padding: 0 60px 100px; }
   .project-images img { width: 100%; display: block; margin-bottom: 60px; }
   .project-nav { padding: 40px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
   .project-nav a { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: #666666; transition: color 0.2s; }
@@ -70,7 +78,9 @@
   @media (max-width: 768px) {
     nav { padding: 20px 24px; }
     .project-header { padding: 100px 24px 20px; }
-    .project-images { padding: 16px 24px 80px; }
+    .header-divider { margin: 24px 0; }
+    .hero-image { margin-bottom: 24px; }
+    .project-images { padding: 0 24px 80px; }
     .project-nav { padding: 32px 24px; }
     footer { padding: 32px 24px; flex-direction: column; gap: 20px; }
   }
@@ -92,6 +102,8 @@
     Sole designer, concept through final production<br>
     Copy support and refinement: Steve Brown
   </p>
+  <hr class="header-divider">
+  <img src="images/Wellbeing_Detail.jpg" alt="Well-being rebrand detail" class="hero-image">
   <div class="project-description">
     <p>The AMA's well-being program reached the same 200 employees year after year. The goal was to change that.</p>
     <p>I developed a visual system built on clean typography, vibrant color, and hand-drawn elements, reflecting that this program was personal, not prescribed. Before launch a teaser campaign built anticipation: table tents, break room posters and elevator screens. Something new was coming. The system extended across website graphics, templates, banners, window clings and environmental signage throughout the building.</p>
@@ -99,7 +111,6 @@
   </div>
 </div>
 <div class="project-images">
-  <img src="images/Wellbeing_Detail.jpg" alt="Well-being rebrand detail">
   <img src="images/Wellbeing_Detail2.jpg" alt="Well-being rebrand detail 2">
   <img src="images/Wellbeing_Detail3.jpg" alt="Well-being rebrand detail 3">
   <img src="images/Wellbeing_Detail4.jpg" alt="Well-being rebrand detail 4">
