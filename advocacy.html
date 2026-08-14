@@ -16,16 +16,20 @@
   .nav-links { display: flex; gap: 40px; list-style: none; }
   .nav-links a { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: #666666; transition: color 0.2s; }
   .nav-links a:hover { color: var(--text); }
-  .project-header { padding: 120px 60px 48px; max-width: 760px; }
+  .project-header { padding: 120px 60px 0; max-width: 760px; }
   .back-link { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: #666666; display: inline-block; margin-bottom: 40px; transition: color 0.2s; }
   .back-link:hover { color: var(--text); }
   .project-title { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 36px; line-height: 1.15; color: #121212; margin-bottom: 16px; }
   .project-role { font-family: 'Source Serif 4', serif; font-weight: 400; font-size: 15px; line-height: 24px; color: #555555; margin-bottom: 28px; }
   .project-role-label { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #666666; margin-bottom: 6px; display: block; }
-  .project-description { font-family: 'Source Serif 4', serif; font-weight: 400; font-size: 16px; line-height: 1.7; color: #555555; border-top: 1px solid var(--border); padding-top: 32px; }
+  .header-divider { border: none; border-top: 1px solid var(--border); margin: 32px 0 0; }
+  .hero-wrap { padding: 10px 60px 0; margin-bottom: 48px; }
+  .hero-wrap img { width: 85%; display: block; margin: 0 auto; }
+  .description-wrap { padding: 0 60px 48px; max-width: 1130px; }
+  .project-description { font-family: 'Source Serif 4', serif; font-weight: 400; font-size: 16px; line-height: 1.7; color: #555555; }
   .project-description p { margin-bottom: 20px; }
   .project-description p:last-child { margin-bottom: 0; }
-  .project-images { padding: 48px 60px 100px; }
+  .project-images { padding: 0 60px 100px; }
   .image-block { margin-bottom: 60px; width: 100%; }
   .image-block img { width: 100%; display: block; }
   .project-nav { padding: 40px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; }
@@ -35,8 +39,11 @@
   .footer-name { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 13px; letter-spacing: 0.05em; color: var(--light); text-decoration: none; display: block; text-align: center; width: 100%; }
   @media (max-width: 768px) {
     nav { padding: 20px 24px; }
-    .project-header { padding: 100px 24px 20px; }
-    .project-images { padding: 16px 24px 80px; }
+    .project-header { padding: 100px 24px 0; }
+    .header-divider { margin: 24px 0 0; }
+    .hero-wrap { padding: 8px 24px 0; margin-bottom: 32px; }
+    .description-wrap { padding: 0 24px 32px; }
+    .project-images { padding: 0 24px 80px; }
     .project-nav { padding: 32px 24px; }
     footer { padding: 32px 24px; flex-direction: column; gap: 20px; }
   }
@@ -57,6 +64,12 @@
     <span class="project-role-label">My Role</span>
     Lead designer, brand system development
   </p>
+  <hr class="header-divider">
+</div>
+<div class="hero-wrap">
+  <img src="images/State_advocacy_hero.jpg" alt="State Advocacy Summit hero">
+</div>
+<div class="description-wrap">
   <div class="project-description">
     <p>The State Advocacy Summit had carried the same visual identity for years. The business unit wanted a design language that could hold its own in rooms full of physicians, policymakers and legislative leaders — bold, powerful, authoritative.</p>
     <p>Concepts were developed across the design team and presented to the client. My concept was selected. I established a foundational visual system including color, typography and core visual elements, designed for long-term use and scaled across signage, banners, floor clings and communications. The system has been implemented across three consecutive years of the annual summit, driving 12% annual growth in attendance and engagement.</p>
